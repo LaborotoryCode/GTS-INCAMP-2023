@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var personToTouch = ""
+    @State var numberOfTouchs = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Section {
+                    TextField("Who would you like to touch today", text: $personToTouch)
+                    TextField("How many times would you like to touch them?", text: $numberOfTouchs)
+                } header: {
+                    Text("Te Touchee")
+                }
+                
+                Button {
+                    
+                } label: {
+                    HStack(alignment: .center) {
+                        Spacer()
+                        Text("Touch!!!!")
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                    }
+                }
+            }
+            .navigationTitle("Person Toucher 9000")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
