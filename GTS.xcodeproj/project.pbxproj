@@ -11,6 +11,9 @@
 		F3017B682B0D9557002C76DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3017B672B0D9557002C76DC /* ContentView.swift */; };
 		F3017B6A2B0D9558002C76DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3017B692B0D9558002C76DC /* Assets.xcassets */; };
 		F3017B6D2B0D9558002C76DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3017B6C2B0D9558002C76DC /* Preview Assets.xcassets */; };
+		F3017B772B0D964B002C76DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3017B762B0D964B002C76DC /* HomeView.swift */; };
+		F3017B792B0D9655002C76DC /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3017B782B0D9655002C76DC /* LeaderboardView.swift */; };
+		F3017B7B2B0D9665002C76DC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3017B7A2B0D9665002C76DC /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F3017B672B0D9557002C76DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3017B692B0D9558002C76DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3017B6C2B0D9558002C76DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3017B762B0D964B002C76DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../HomeView.swift; sourceTree = "<group>"; };
+		F3017B782B0D9655002C76DC /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		F3017B7A2B0D9665002C76DC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,8 @@
 		F3017B642B0D9557002C76DC /* GTS */ = {
 			isa = PBXGroup;
 			children = (
-				F3017B652B0D9557002C76DC /* GTSApp.swift */,
-				F3017B672B0D9557002C76DC /* ContentView.swift */,
-				F3017B692B0D9558002C76DC /* Assets.xcassets */,
+				F3017B732B0D9627002C76DC /* Application */,
+				F3017B742B0D962C002C76DC /* Main */,
 				F3017B6B2B0D9558002C76DC /* Preview Content */,
 			);
 			path = GTS;
@@ -65,6 +70,42 @@
 				F3017B6C2B0D9558002C76DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3017B732B0D9627002C76DC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F3017B652B0D9557002C76DC /* GTSApp.swift */,
+				F3017B672B0D9557002C76DC /* ContentView.swift */,
+				F3017B692B0D9558002C76DC /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F3017B742B0D962C002C76DC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3017B7C2B0D966E002C76DC /* Managers */,
+				F3017B752B0D9634002C76DC /* UI */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3017B752B0D9634002C76DC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3017B762B0D964B002C76DC /* HomeView.swift */,
+				F3017B782B0D9655002C76DC /* LeaderboardView.swift */,
+				F3017B7A2B0D9665002C76DC /* SettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F3017B7C2B0D966E002C76DC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3017B7B2B0D9665002C76DC /* SettingsView.swift in Sources */,
+				F3017B792B0D9655002C76DC /* LeaderboardView.swift in Sources */,
+				F3017B772B0D964B002C76DC /* HomeView.swift in Sources */,
 				F3017B682B0D9557002C76DC /* ContentView.swift in Sources */,
 				F3017B662B0D9557002C76DC /* GTSApp.swift in Sources */,
 			);
