@@ -9,7 +9,40 @@ import SwiftUI
 
 struct LeaderboardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            Section {
+                HStack {
+                    Image(systemName: "photo")
+                    Text("name")
+                    Spacer()
+                    Text("counter")
+                }
+            } header: {
+                Text("Aathithya Tier")
+            }
+            
+            Section {
+                HStack {
+                    Image(systemName: "photo")
+                    Text("name")
+                    Spacer()
+                    Text("counter")
+                }
+            } header: {
+                Text("Luke Tier")
+            }
+            
+            Section {
+                HStack {
+                    Image(systemName: "photo")
+                    Text("name")
+                    Spacer()
+                    Text("counter")
+                }
+            } header: {
+                Text("Kai Tier")
+            }
+        }
     }
 }
 
